@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/28a1b25504.js" crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		*
+		{
+			margin:0px;
+			padding:0px;
+			box-sizing: border-box;
+		}
+		.header{
+			
+			width: 100%;
+			height:100px;
+		   /*background-color:  black;*/
+		   font-family: 'Staatliches', cursive;
+			display: flex;
+			justify-content: space-between;
+			
+		}
+		.middlediv{
+			
+			width: 100%;
+			/*height:500px;*/
+			/*background-color: yellow;*/
+			display:flex;
+		}
+		.thirddiv{
+			
+			width: 100%;
+			
+			margin-top:50px;
+			margin-bottom:50px;
+		}
+		.first_column
+		{
+			width:50%;
+			/*background-color: aqua;*/
+		}
+		.first_column img
+		{
+             width:100%;
+            
+		}
+		.first_column p
+		{
+			font-size: 3vw;
+			text-align: center;
+			margin-top: -10vw;
+			text-transform: capitalize;
+			background: -webkit-linear-gradient(#FE6309, #EE0D73);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-weight: bolder;
+
+		}
+		.logo
+		{
+			width:30%;
+		}
+		.logo img
+		{
+			width:45%;
+			height:100%; 
+
+		}
+		.menu
+		{
+			width:25%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.menu ul
+		{
+		   /*margin-top: 10px;*/
+		}
+		.menu li
+		{
+			display: inline;
+			color:rgb(238, 13, 115);
+			padding:10px;
+			font-weight: bold;
+			font-family: 'Staatliches', cursive;
+		}
+		.second_column
+		{
+			width:50%;
+		}
+		.second_column img
+		{
+			width:100%;
+			/*height:100%;*/
+			-webkit-animation: linear infinite;
+            -webkit-animation-name: ibzoom;
+            -webkit-animation-duration: 4.5s;
+		}
+		
+	@-webkit-keyframes ibzoom{
+      0%{
+        transform: scale(0.9);
+      }
+      50%{
+        transform: scale(1);
+      }
+      100%{
+        transform: scale(0.9);
+      }
+    }
+    a
+    {
+    	text-decoration: none;
+    }
+    .thirddiv_first p
+    {
+        font-size: 350%; text-align: center;
+			background: -webkit-linear-gradient(#FE6309, #EE0D73);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-weight:bolder;
+
+    }
+    .thirddiv_first ul
+    {
+    	padding-left: 5%;font-size: 250%;
+    		margin-top:10px;
+    }
+    .complete
+    {
+    	background-image: url('bg1.png');
+    	background-repeat: no-repeat;
+    	background-size: 100% 100%;
+    	padding-bottom: 50px;
+    	background-color: rgb(238, 13, 115);
+    	 background-blend-mode:lighten;
+
+    }
+
+  </style>
+</head>
+<body>
+  <div class="complete">	
+	<div class="header" >
+		<div class="logo">
+		  <img src="logo.jpg"> 	
+		</div>
+		<div class="menu">
+		    <ul>
+		    	<a href="#about"><li>About</li></a>
+		    	<a href="#achie"><li>Education Details</li></a>
+		    	<a href="#contact"><li>contact</li></a>
+		    </ul>	
+		</div>
+		
+	</div>
+	<div class="middlediv">
+		<div class="first_column">
+		 <img src="name.png">
+		 <p>Welcome To my Portfolio</p>
+		</div> 
+		<div class="second_column">
+			<img src="boy.png">
+		</div>
+		
+	</div>
+
+	<div id="about" class="thirddiv">
+		<div class="thirddiv_first">
+		<p>About</p>
+			<ul>
+				<li>Computer Science And Engineering Student in the renouned college "Dr. B.C ROY ENGINEERING COLLEGE"</li>
+				<li>Like to be a coder and one of the member of icoder.</li>
+			</ul>
+
+
+		</div>
+	</div>
+	<div id="achie" class="thirddiv">
+	    <div class="thirddiv_first">	
+		<p>Education Qualification</p>
+		<ul>
+			<li>Studied in M.G.M HIGHER SECONDARY SCHOOL</li>
+			<li>Got 9.8 CGPA in Class 10 from MGM SCHOOL</li>
+			<li>Got 87% in Class 12 from MGM SCHOOL</li>
+			<li>Got 20000 Rank in WBJEE</li>
+			<li>Know Basic in C language</li>
+			<li>Know Basic in HTML AND CSS</li>
+			<li>Know Basic in PYTHON</li>
+		</ul>
+	</div>
+	</div>
+
+	<div id="contact" class="thirddiv">
+		<div class="thirddiv_first">
+		<p>Contact</p>
+			<ul>
+				<li><i class="fas fa-mobile-alt"></i>&nbsp;7488895403</li>
+				<li><i class="fas fa-envelope-square"></i>&nbsp;shaway87@gmail.com</li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>	
+
+</body>
+</html>
